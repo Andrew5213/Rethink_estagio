@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questão 2</title>
+    <script>
+        //aqui temos que manipular um vetor
+        const  pessoas=[
+            {name:"Fabiana Araujo",age:33},
+            {name: "Gabriela Gomes",age: 25},
+            {name: "Fernando Henrrique",age: 17},
+            {name: "Ana Luiza",age:2},
+            {name: "Geralda do Nascimento",age: 93},
+            {name: "Miguel Souza",age: 70},
+            {name: "Antonio Miguel",age: 69},
+        ];
+        console.log(pessoas);
+     //vamos acessar diretamente as posições
+        console.log(pessoas[1]);
+        if (pessoas[1].name=="Gabriela Gomes"){
+             console.log("achou");
+            //logo vamos ver que aqui sera verdade e vai aparecer no console achou
+
+        }
+        //agora a inteção e trocar os valores que estao no vetor
+        pessoas[0].name="Andrew Figueiredo";
+        pessoas[0].age=21;
+        //vamos verificar se foi mudado de fato
+        console.log(pessoas);//retorna o vetor inteiro
+        //de fato o vetor foi alterado
+        //vamos ver o tamanho do vetor
+        console.log("o vetor possui: "+pessoas.length+"posições");
+        pessoas.pop();//remove no final
+        console.log(pessoas);
+        console.log("---------------------------");
+        pessoas.push({name: "Antonio Miguel",age: 69});
+        console.log(pessoas);
+        pessoas.shift();//remover no inicio do array
+        pessoas.unshift({name:"Fabiana Araujo",age:33});//adiciona no inicio
+    </script>
+</head>
+<body>
+
+</body>
+</html>

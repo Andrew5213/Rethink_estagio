@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- no css o form e para o tamanho do form-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Formulário Questão 1 </title>
+    <style>
+        body {
+
+            background-color: azure;
+
+
+        }
+
+        form {
+            width: 700px;
+            right: 700px;
+            border: 20px;
+            padding: 20px;
+            background-color: #a7cacc;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+
+    </style>
+    <div id="logo">
+        <img src="logo%20rethink.png">
+    </div>
+</head>
+<body>
+
+<div class="container ">
+
+
+    <div class="col-md-6 offset-md-2"> <!-- assim vai ficar alinhado no centro -->
+        <form>
+
+            <div class="form-group  ">
+                <label for="nome"><b>Nome</b></label>
+                <input name="nome" type="text" class="form-control" id="nome" placeholder="digite aqui seu nome">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="idade"><b>Idade:</b></label>
+                <input name="idade" type="number" class="form-control" id="idade" placeholder="">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="profissao"><b>Profissão:</b></label>
+                <input name="profissao" type="text" class="form-control" id="profissao" placeholder="">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email"><b>Email:</b></label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="">
+                <!--nao acho que tenha necissidade de um placeholder-->
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="telefone"><b>Telefone:</b></label>
+                <input name="telefone" type="tel" class="form-control" id="telefone" placeholder="">
+                <!--nao acho que tenha necissidade de um placeholder-->
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="data"> <b>Data de Preenchimento:</b></label>
+                <input name="data" type="datetime-local" class="form-control" id="data" placeholder=datatime-local>
+                <!--nao acho que tenha necissidade de um placeholder-->
+
+            </div>
+            <div id="botao" style="width: auto; margin-top: 50px;">
+                <button type="submit" class="btn btn-primary btn-st btn-block">Enviar Formulàrio</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

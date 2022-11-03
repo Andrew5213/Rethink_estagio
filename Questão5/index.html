@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questão 5 </title>
+    <h1>questao 5</h1>
+    <h3>por motivos de didatica tudo acontecera no console </h3>
+    <script>
+        const pessoas = [
+            {name: "Fabiana Araujo", age: 33},
+            {name: "Gabriela Gomes", age: 25},
+            {name: "Fernando Henrrique", age: 17},
+            {name: "Ana Luiza", age: 2},
+            {name: "Geralda do Nascimento", age: 93},
+            {name: "Miguel Souza", age: 70},
+            {name: "Antonio Miguel", age: 69},
+        ];
+
+        //aqui vamos inserir os ids para o vetor
+        function inserirId() {
+            for (i = 0; i < pessoas.length; i++) {
+                pessoas[i] = {id: i, name: pessoas[i].name, age: pessoas[i].age};// desta maneira e garantido que os id nao ira se repetir
+            }
+            return pessoas;
+        }
+
+        console.log(inserirId());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

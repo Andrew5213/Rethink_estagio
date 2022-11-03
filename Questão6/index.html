@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questão 6 </title>
+    <h1>questao 6</h1>
+    <h3>por motivos de didatica tudo acontecera no console </h3>
+    <script>
+        //Desenvolva uma função que retorna os dados das pessoas para quem tem idade suficiente para tirar a primeira habilitação.
+        //com esse objetivo vamos em busca da solução
+
+    const pessoas = [
+    {name: "Fabiana Araujo", age: 33},
+    {name: "Gabriela Gomes", age: 25},
+    {name: "Fernando Henrrique", age: 17},
+    {name: "Ana Luiza", age: 2},
+    {name: "Geralda do Nascimento", age: 93},
+    {name: "Miguel Souza", age: 70},
+    {name: "Antonio Miguel", age: 69},
+    ];
+    function idadeSuperior(){
+        for (i=0;i<pessoas.length;i++){
+            if (pessoas[i].age>=18){
+                console.log("nome: "+pessoas[i].name +", idade: "+pessoas[i].age);//a parte da idade nao e necessaria deixei apenas para visualizar que a idade e superior a 18 anos
+
+            }
+        }
+    }
+    console.log(idadeSuperior());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

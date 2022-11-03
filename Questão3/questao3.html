@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>questao 3 </title>
+    <h1>questao 3 </h1>
+    <h3>por motivos de didatica tudo acontecera no console </h3>
+    <script>
+        console.log("oi");
+        const pessoas = [
+            {name: "Fabiana Araujo", age: 33},
+            {name: "Gabriela Gomes", age: 25},
+            {name: "Fernando Henrrique", age: 17},
+            {name: "Ana Luiza", age: 2},
+            {name: "Geralda do Nascimento", age: 93},
+            {name: "Miguel Souza", age: 70},
+            {name: "Antonio Miguel", age: 69},
+        ];
+
+        //o objetivo deste exercicio e criar uma função que recebe como parametro um name e retorna o name e o age
+
+        function retorna(nome) {
+            for (i = 0; i < pessoas.length; i++) {
+                //console.log(i);
+                //console.log(pessoas[i].name);
+                if (pessoas[i].name == nome) return pessoas[i];// assim retorna os dados do vetor
+            }
+
+
+        }
+//aqui vamos chamar o função e estou passando o valor retornado
+        valor = 'Gabriela Gomes';
+        console.log(retorna(valor));//aqui chamamos e imprimimos a função.
+    </script>
+</head>
+<body>
+
+</body>
+</html>

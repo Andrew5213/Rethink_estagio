@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão4</title>
+    <h1>questao 7</h1>
+    <h3>por motivos de didatica tudo acontecerá no console </h3>
+    <script>
+        //aqui foi proposto para imprimir os nomes e se possivel imprimir somente a primeiro nome de cada
+        const pessoas = [
+            {name: "Fabiana Araujo", age: 33},
+            {name: "Gabriela Gomes", age: 25},
+            {name: "Fernando Henrrique", age: 17},
+            {name: "Ana Luiza", age: 2},
+            {name: "Geralda do Nascimento", age: 93},
+            {name: "Miguel Souza", age: 70},
+            {name: "Antonio Miguel", age: 69},
+        ];
+
+        function retornaNomeCompleto() {
+            const vetor1 = [];
+            for (i = 0; i < pessoas.length; i++) {
+                //console.log(pessoas[i].name);
+                nome = pessoas[i].name;
+                vetor1.push(nome);
+            }
+            //desta maneira essa função vai mostrar os nomes completos
+            return vetor1;
+        }
+
+        function retornaPrimeiroNome() {
+            const vetor = [];
+            for (i = 0; i < pessoas.length; i++) {//percorre cada casa do vetor
+                nome = pessoas[i].name.split(' ')[0];//o assim pega somente o primeiro nome
+                vetor.push(nome);
+                // console.log( vetor);
+            }
+            return vetor;
+        }
+
+        //agora vamos mostrar somente o primeiro nome
+        console.log('Nome completo');
+        console.log(retornaNomeCompleto());//aqui chamamos para imprimir o nome completo
+        console.log('-------------------------------------------');
+        console.log("somente Primeiro Nome");
+        console.log(retornaPrimeiroNome());//aqui chamamos para imprimir o primeiro nome
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
